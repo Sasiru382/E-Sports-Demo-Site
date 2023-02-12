@@ -1,0 +1,265 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="Query.css">
+		<link rel="stylesheet" href="ExternalCss.css">
+		<link rel="stylesheet" href="navigation.css">
+		<link rel="stylesheet" href="style1.css">
+		<link rel="stylesheet" href="style1.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="Styles.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="Styles.css">
+		<title>Query form</title>
+		<style>
+			#heading{
+				background-image: url(images/dragon2.jpg);
+				background-repeat: no-repeat;
+	    		background-size: cover;
+				width:100% ;
+				height: 160px;
+				position: relative;
+				font-size: xx-large;
+				color: white;
+				text-align: center;
+				padding-top: 10px;
+			}
+			.footer{
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				background-color: grey;
+				color: white;
+				text-align: center;
+			}
+			.navigation_bar{
+				top: 0;
+			}
+		</style>
+
+		<script>
+
+			function formValidation() {
+				
+				let nameValue = document.getElementById("name").value;
+				document.getElementById("Name_output").innerHTML = nameValue;
+
+				let teleValue = document.getElementById("telNo").value;
+				document.getElementById("Contact_output").innerHTML = teleValue;
+
+				let mailValue = document.getElementById("mail").value;
+				document.getElementById("Email_output").innerHTML = mailValue; 
+
+				let BODValue = document.getElementById("BOD").value;
+				document.getElementById("Age_output").innerHTML = BODValue;
+
+				let detailslValue = document.getElementById("sub").value;
+				document.getElementById("Details_output").innerHTML = detailslValue;
+
+				if (nameValue === "") {
+					alert("Please fill the name");
+					return false;
+				} else if (teleValue === ""){
+					alert("Please enter your telephone number");
+					return false;
+				} else if (mailValue === ""){
+					alert("Please enter your Email");
+					return false;
+				} else if (BODValue === ""){
+					alert("Please enter your Age");
+					return false;
+				} else if (detailslValue === ""){
+					alert("Please enter anything");
+					return false;
+
+
+				} else {
+					document.getElementById("Qmain_page").style.display = "none";
+					document.getElementById("summary").style.display = "block";
+				}
+
+				
+				function editForm() {
+				document.getElementById("summary").style.display = "none";
+				document.getElementById("Qmain_page").style.display = "block";
+				}
+				
+				function reloadPage() {
+					reload = location.reload();
+				} 
+		</script>
+	</head>
+	<body>
+		
+		<nav>
+	        <div class="navigation_bar" >
+	            	
+	            <img id="navLogo" src="Logo/logo_nav.png" alt="fade effect">
+	                
+	            <ul class="menu_area">
+	                    <li><a href="Sitemap.html"> Site map </a></li>
+	                    <li><a href="About_Us.html"> About us </a></li>
+	                    <li><a href="QueryForm.html"> Contact us </a></li>
+	                    <li><a href="Game_Engines.html">Engines </a></li>
+	                    <li><a href="Quiz2.html"> Quize </a></li>
+	                    <li><a href="CollectionNew.html"> Collection </a></li>
+	                    <li><a href="Shop.html"> Shop </a></li>
+	                    <li class="active"><a href="mainPage.html">Home</a></li>
+	            </ul>
+	        </div>
+
+    	</nav>
+    	<div id="heading">
+			<h1 style="padding-top: 10px; font-family: calibri; font-size: 60px;">Contact Us</h1>
+		</div>
+		<div class="Qmain_page">
+			<form name="custom_form" id="custom_form" action="mailto: nimni.20210008@iit.ac.lk" method="POST">
+
+				<div class="formBox">
+					<h2>Query Form</h2>
+					<p>Our team is happy to asnwer your questions. Fill out the form and we'll be in touch as soon as possible</p>
+
+					<div class="input-row">
+						<label for="name">Name</label><br>
+						<input type="text" name="name" id="name" placeholder="John De Silva">
+						<div class="error">Your name is required</div>
+					</div>
+
+					<div class="input-row">
+						<label for="telNo">Contact Number</label><br>
+						<input type="number" name="telNo" id="telNo" placeholder="+94 xxxxxxxxxx">
+						<div class="error">Please enter your Telephone number</div>
+					</div>
+
+					<div class="input-row">
+						<label for="mail">Email address</label><br>
+						<input type="text" name="mail" id="mail" placeholder="username@gmail.com">
+						<div class="error">Please enter a valid email address</div>
+					</div>
+
+					<div class="input-row">
+						<label for="BOD">Age</label><br>
+						<input type="number" name="BOD" id="BOD" min="12" max="80" required>
+						<div class="error">Please select your age</div>
+					</div>
+					
+
+					<div class="input-row">
+						<select name="subjectsel" id="sub" multiple size="1">
+							<option>Subject*</option>
+							<option>Inquiry related to Shop</option>
+							<option>Inquiry related on Webpage</option>
+							<option>Inquiry related on Games</option>
+							<option>Webpage Design</option>
+							<option>Webpage faults</option>
+							<option>Satisfactory</option>
+							<option>Other</option>
+						</select>
+						<div class="error">Please select the Subject</div>
+					</div>
+
+					<div class="input-row">
+						<label for="txtArea">Query details,</label><br>
+						<textarea placeholder="Message" name="txtArea" id="txtArea" rows="10" cols="10"></textarea>
+						<div class="error">Please enter your inquries</div>
+					</div>
+
+					<hr/>
+					<div class="View_query">
+						<button type="button" name="btnQuery" id="btnQ" onclick="formValidation()">
+						View Query</button> 
+						<!--<button id="btnQ">View Query</button>-->
+					</div>
+
+				</div>
+
+			</form>
+			
+		
+
+		<div id="summary">
+			<h1>Query Form</h1>
+			<p>Our team is happy to asnwer your questions. Fill out the form and we'll be in touch as soon as possible</p>
+
+			<p>Name: <span id="Name_output"></span></p>
+			<p>Contact Number: <span id="Contact_output"></span></p>
+			<p>Email Address: <span id="Email_output"></span></p>
+			<p>Age: <span id="Age_output"></span></p>
+			<p>Subject: <span id="Subject_output"></span></p>
+			<p>Query Details: <span id="Details_output"></span></p>
+
+			<button name="edit" id="btnEdit" onclick="editForm()">Edit</button>
+			<input type="Submit" name="submit" id="Submit" form="custom_form" onclick="reloadPage()" value="send">
+		</div>
+
+	</div>	
+	<div id="footerBody">
+      
+         <footer>
+            
+            <div class="section1">
+               <div class="footerpara abtUs">
+                  <img src="images/logo_nav.png" alt="WebsiteLogo" id="imgtag">
+
+                  <h2 id="abtId">About Us</h2>
+                  <p id="align1">GameSpot website is dedicated exclusively to serve the game player's to get the knowledge on upcoming, released games as well as ask any doubtful questions which user's has on global interactive gaming industry and any furthur thing relates to our website GameSpot. Sign with us. Stay informed about special deals, the latest products, events, and more from GameSpot.</p>
+               </div>
+            </div>
+
+            <div class="footerpara links">
+               <h2>Quick Links</h2>
+                  <ul class="hoverlinks">
+                     <li><a href="Shop.html">Shop</a></li>
+                     <li><a href="Quiz2.html">Quize</a></li>
+                     <li><a href="CollectionNew.html">Collection</a></li>
+                     <li><a href="QueryForm.html">Contact Us</a></li>
+                     <li><a href="About_Us.html">About us</a></li>
+                     <li><a href="Sitemap.html">Site map</a></li>
+                  </ul>
+            </div>
+
+            <div class="social_sp">
+
+            <div class="footerpara contact">
+               <h2 id="contactId">Contact Us</h2>
+                  <ul class="remBull">
+
+                     <li> <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                     <a href="#">&nbsp;&nbsp;No.57,<br>&nbsp;&nbsp;&nbsp;Ramakrishna Road,<br>&nbsp;&nbsp;&nbsp;Colombo 06,<br>&nbsp;&nbsp;&nbsp;Sri Lanka.</a></li>    
+
+                     <li> <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                     <a href="#">&nbsp;&nbsp;gamecorder@gmail.com</a> </li>
+
+                     <li> <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                     <a href="#">&nbsp;&nbsp;+94 0772013482</a></li>
+
+                  </ul>
+            </div>   
+
+               <div class="social_media"> 
+                  <ul class="sm_hov">        
+                  <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                  </ul>
+
+               </div>
+            </div>
+            
+      </footer>
+      <footer>
+         <div class="copyRight">
+            <p> © 2022 Gamespot LK, All rights reserved<br><i>Edited by</i></p>
+            <p>Editor's page : <a href="Editorspage.html" target="_blank" style="text-decoration:none;color: white;">Nimni Senarathne</a></p>
+         </div>
+      </footer>
+      
+   </div>      
+		
+	</body>
+</html>

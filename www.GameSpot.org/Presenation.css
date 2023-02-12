@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    background:url("images/gameee.jpg");
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      padding: 0 25%;
+  }
+  
+  .typer-container{
+      position: relative;
+  }
+  
+  #name1{
+    display: inline-block;
+  }
+  #name2{
+    display: inline-block;
+  }
+  #name3{
+    display: inline-block;
+  }
+  #name4{
+    display: inline-block;
+  }
+  
+  h1{
+    font-size: 5em;
+    margin-top: 3%;
+    margin-bottom: -100px;
+    overflow: hidden;
+    white-space: nowrap; 
+    width: 0;
+    animation: typing 2s steps(25, end) forwards;
+  }
+  
+  #name_type1{
+      position: relative;
+      text-align: center;
+      left: 40px;
+      font-size: 1.5em;
+      overflow: hidden;
+      border-right: .15em solid #5f0303;
+      white-space: nowrap; 
+      width: 0;
+      animation: 
+        typing 1s steps(25, end) forwards;
+  
+  }
+  #name2_type2{
+      position: relative;
+      text-align: center;
+      left: 40px;
+      font-size: 1.5em; 
+      overflow: hidden;
+      border-right: .15em solid #5f0303;
+      white-space: nowrap; 
+      width: 0;
+      animation: typing 1s steps(25, end) forwards;
+      animation-delay: 1s;
+  }
+  #name3_type3{
+      position: relative;
+      text-align: center;
+      left: 40px;
+      font-size: 1.5em; 
+      overflow: hidden;
+      border-right: .15em solid #5f0303; 
+      white-space: nowrap; 
+      width: 0;
+      animation: typing 1s steps(25, end) forwards;
+      animation-delay: 2s;
+  }
+  
+  #name4_type4{
+    position: relative;
+    text-align: center;
+    left: 40px;
+    font-size: 1.5em; 
+    overflow: hidden;
+    border-right: .15em solid #5f0303; 
+    white-space: nowrap; 
+    width: 0;
+    animation: typing 1s steps(25, end) forwards;
+    animation-delay: 3s;
+  }
+  
+  /* .writer-container {
+    position: relative;
+    width: 800px;
+    margin-top: 80px;
+    border-radius: 4px;
+    box-sizing: border-box;
+  } */
+    
+  #Loading-bar {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+    
+  #Loading-bar:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    animation: load 4s;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: #5f0303 }
+  }
+  
+  @keyframes load {
+  0% {
+    width: 0;
+    background: #5f0303;
+  }
+  
+  100% {
+    width: 100%;
+    background: #5f0303;
+  }
+  }

@@ -1,0 +1,91 @@
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+.WhatUnity p{
+	border: 1px solid lightgrey;
+	line-height: 2;
+	margin-left: 14px;
+	margin-right: 20px;
+}
+
+.postmodel{
+	padding: 0;
+	margin: 0;
+	width: 1200px;
+	height: 735px;
+	display: flex;
+	margin-top: 50px;
+	margin-left: 115px;
+}
+
+
+#img1 {
+	margin-left: 20px;
+	margin-top: 8px;
+	width: 320px;
+	height: 200px;
+}
+#img2 {
+	margin-left: 4px;
+	margin-top: 8px;
+	width: 320px;
+	height: 200px;
+}
+#img3 {
+	margin-left: 4px;
+	margin-top: 8px;
+	width: 320px;
+	height: 200px;
+}
+#heading_services{
+	text-align: center;
+	border-bottom: 1.5px solid rgb(200, 200, 200);
+	border-color: grey;
+}
+
+.box_model{
+	width: 550px;
+	height: 700px;
+	box-shadow: -1px 0 8px #000000;	
+	margin: 15px;
+}
+.box_model1{
+	width: 550px;
+	height: 700px;
+	box-shadow: -1px 0 20px #000000;
+	margin: 15px;	
+}
+.box_model2{
+	width: 550px;
+	height: 700px;
+	box-shadow: -1px 0 20px #000000;
+	margin: 15px;	
+}
+#serp{
+	font-weight: bold;
+}
+#bene_line, #bene_line1{
+	border-bottom: 1.5px solid rgb(200, 200, 200);
+	border-color: grey;
+}
+.benefits{
+	line-height: 1.5;
+}
+.demovideo video{
+	width:100%;height: 600px;
+}
+.generations, .useful, .Newver, .WhatUnity, #mainheading, #serp, .demovideo{
+	line-height: 1.5;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#serPoints1, #serPoints2, #serPoints3{
+	color: silver;
+	
+}
+/*#serPoints4, #serPoints5, #serPoints6, #serPoints7, #serPoints8, #serPoints9{
+	color: purple;
+}*/

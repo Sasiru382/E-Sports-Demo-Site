@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Collection</title>
+		<meta charset="utf-8">
+		<link href="CollectionNew.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="ExternalCss.css">
+
+		<!--CSS for navigation panel and footer-->
+		<link rel="stylesheet" href="navigation.css">
+		<link rel="stylesheet" href="style1.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="Styles.css">
+	
+	</head>
+	<body>
+		<nav>
+	        <div class="navigation_bar" >
+	            	
+	            <img id="navLogo" src="Logo/logo_nav.png" alt="fade effect"> 
+	                
+	            <ul class="menu_area">
+	                    <li><a href="Sitemap.html"> Site map </a></li>
+	                    <li><a href="About_Us.html"> About us </a></li>
+	                    <li><a href="QueryForm.html"> Contact us </a></li>
+	                    <li><a href="Game_Engines.html">Engines </a></li>
+	                    <li><a href="Quiz2.html"> Quize </a></li>
+	                    <li><a href="Collection.html"> Collection </a></li>
+	                    <li><a href="Shop.html"> Shop </a></li>
+	                    <li class="active"><a href="mainPage.html">Home</a></li>
+	            </ul>
+	        </div>
+    	</nav>
+
+	<div class="container">
+		
+			<div id="topic">
+					<h1>COLLECTION</h1>
+			</div>
+			<!-- to change the background colour-->
+			<form id="ThemeChange">
+				<label for="colors" ><b>Theme :</b></label>
+					<select name="colorbg" id="colors" onchange="changeBgColor(this)">
+						<option value="#FFFFFF" selected>Default</option>
+						<option value="#080325">Dark-Blue</option>
+						<option value="#181C23" >Light-Gray</option>
+						<option value="#42026A" >Purple</option>
+					</select>		
+				&nbsp;&nbsp;
+
+			<!-- to change the text colour-->
+				<label for="textcolor" ><b>Font colour :</b></label>
+					<select name="textcolor" id="textcolor" onchange="changeTextColor(this)">
+						<option value="#000000" selected>Default</option>
+						<option value="#FF1300" >Light-Red</option>
+						<option value="#6E2C00">Gold</option>
+						<option value="#00098D">Blue</option>
+					</select>		
+			</form>
+
+			<!-- thumbnail images-->
+			<div id="gallery">
+				<figure id="figure1">
+					<img src="images/Sports.jpg" alt="sport" >
+					<figcaption>
+						<strong>Sports</strong>
+					</figcaption>			
+				</figure>
+				<figure id="figure2">
+					<img src="images/ActionAdventure.jpg" alt="Action_adventure">
+					<figcaption>
+						<strong>Action & Adventure</strong>
+					</figcaption>			
+				</figure>
+				<figure id="figure3">
+					<img src="images/BattleRoyal.jpg" alt="multiplayer">
+					<figcaption>
+						<strong>Multiplayer</strong>
+					</figcaption>
+				</figure>
+				<figure id="figure4">
+					<img src="images/Shooter.jpg" alt="shooter">
+					<figcaption>
+						<strong>Shooter</strong>
+					</figcaption>
+				</figure>
+				<figure id="figure5">
+					<img src="images/Horror.jpg" alt="horror">
+					<figcaption>
+						<strong>Horror</strong>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- content display when select a thumbnail-->
+			<div id="content">
+				<div id="hidden-content1">
+					<h2>Games that Simulate practice of Sports</h2>				
+					<ul id="list1">					
+						<li><span>FIFA 2022</span><img src="images/fifa.jpg" alt="fifa22" class="detail"></li>
+					
+						<li><span>NBA 2020</span><img src="images/basketball-NBA2K20.jpg" alt="nba22" class="detail"></li>
+					
+						<li><span>F1 2018</span><img src="images/formula1.jpg" alt="f1" class="detail"></li>
+					</ul>
+					<p class="detailp">A sports video game is a video game that simulates the practice of sports. Most sports have been recreated with a game, including team sports, track and field, extreme sports, and combat sports. Some games emphasize actually playing the sport (such as FIFA, Pro Evolution Soccer and Madden NFL), whilst others emphasize strategy and sport management (such as Football Manager and Out of the Park Baseball). Some, such as Need for Speed, Arch Rivals and Punch-Out!!, satirize the sport for comic effect. This genre has been popular throughout the history of video games and is competitive, just like real-world sports. A number of game series feature the names and characteristics of real teams and players, and are updated annually to reflect real-world changes. The sports genre is one of the oldest genres in gaming history.</p>
+				</div>
+				<div id="hidden-content2">
+					<h2>Action-adventure game</h2>				
+					<ul id="list2">					
+						<li><span>The Witcher 3: Wild Hunt</span><img src="images/EGS_TheWitcher33e.jpg" alt="witcher3" class="detail"></li>
+					
+						<li><span>Red Dead Redemption 2</span><img src="images/Rdr2.jpg" alt="RDR2" class="detail"></li>
+					
+						<li><span>God of War</span><img src="images/godofWar.jpg" alt="gow4" class="detail"></li>
+					</ul>
+					<p class="detailp">The action-adventure genre is a video game genre that combines core elements from both the action game and adventure game genres. Action-adventure is a hybrid genre and can include many games which might better be categorized under more narrow genres. Typically, pure adventure games have situational problems for the player to solve, with very little or no action. If there is action, it is generally confined to isolated minigames. Pure action games have gameplay based on real-time interactions that challenge the reflexes. Therefore, action-adventure games engage both reflexes and problem-solving in both violent and non-violent situations.</p>
+				</div>
+				<div id="hidden-content3">
+					<h2>Multiplayer video game</h2>				
+					<ul id="list3">					
+						<li><span>Fortnite</span><img src="images/fortnite.jpg" alt="fortnite" class="detail"></li>
+					
+						<li><span>PlayerUnknown's Battlegrounds</span><img src="images/pubg-pc2.jpg" alt="pubgpc" class="detail"></li>
+					
+						<li><span>Call of Duty: Warzone</span><img src="images/warzone.jpg" alt="codwarzone" class="detail"></li>
+					</ul>
+					<p class="detailp">A multiplayer video game is a video game in which more than one person can play in the same game environment at the same time, either locally and on the same computing system (couch co-op), locally and on different computing systems via a local area network, or via a wide area network, most commonly the Internet (e.g. World of Warcraft, Call of Duty). Multiplayer games usually require players to share a single game system or use networking technology to play together over a greater distance; players may compete against one or more human contestants, work cooperatively with a human partner to achieve a common goal, or supervise other players' activity. Due to multiplayer games allowing players to interact with other individuals, they provide an element of social communication absent from single-player games.</p>
+				</div>
+				<div id="hidden-content4">
+					<h2>Shooter game</h2>				
+					<ul id="list4">					
+						<li><span>Crysis Remastered</span><img src="images/crysisi.jpg" alt="crysis" class="detail"></li>
+					
+						<li><span>Halo Infinite</span><img src="images/haloinfinity.jpg" alt="haloinfinity" class="detail"></li>
+					
+						<li><span>Call of Duty: Black Ops III</span><img src="images/codblackops.jpg" alt="codblackops" class="detail"></li>
+					</ul>
+					<p class="detailp">Shooter video games or shooters are a subgenre of action video games where the focus is almost entirely on the defeat of the character's enemies using the weapons given to the player. Usually these weapons are firearms or some other long-range weapons, and can be used in combination with other tools such as grenades for indirect offense, armor for additional defense, or accessories such as telescopic sights to modify the behavior of the weapons. A common resource found in many shooter games is ammunition, armor or health, or upgrades which augment the player character's weapons. Shooter games test the player's spatial awareness, reflexes, and speed in both isolated single player or networked multiplayer environments.[citation needed] Shooter games encompass many subgenres that have the commonality of focusing on the actions of the avatar engaging in combat with a weapon against both code-driven NPC enemies or other avatars controlled by other players.</p>
+				</div>
+				<div id="hidden-content5">
+					<h2>Horror game</h2>				
+					<ul id="list5">					
+						<li><span>Resident Evil 3 Remastered</span><img src="images/RE3R+-+Thumbnail.png" alt="residentevil" class="detail"></li>
+					
+						<li><span>DOOM-Eternal 2020</span><img src="images/DOOM-Eternal_KeyArt_3_1920x1080.jpg" alt="Doom" class="detail"></li>
+					
+						<li><span>Little Nightmares II</span><img src="images/lighttle.jpg" alt="littlenightmare" class="detail"></li>
+					</ul>
+					<p class="detailp">A horror game is a video game genre centered on horror fiction and typically designed to scare the player. Unlike most other video game genres, which are classified by their gameplay, horror games are nearly always based on narrative or visual presentation, and use a variety of gameplay types.</p>
+				</div>
+			</div>
+
+			<!-- footer of the webpage-->
+			<div id="footerBody">
+			
+				<footer>
+					
+					<div class="section1">
+						<div class="footerpara abtUs">
+							<img src="images/logo_nav.png" alt="WebsiteLogo" id="imgtag">
+
+							<h2 id="abtId">About Us</h2>
+							<p id="align1">GameSpot website is dedicated exclusively to serve the game player's to get the knowledge on upcoming, released games as well as ask any doubtful questions which user's has on global interactive gaming industry and any furthur thing relates to our website GameSpot. Sign with us. Stay informed about special deals, the latest products, events, and more from GameSpot.</p>
+						</div>
+					</div>
+
+					<div class="footerpara links">
+						<h2>Quick Links</h2>
+							<ul class="hoverlinks">
+								<li><a href="Shop.html">Shop</a></li>
+								<li><a href="Quiz2.html">Quize</a></li>
+								<li><a href="Collection.html">Collection</a></li>
+								<li><a href="QueryForm.html">Contact Us</a></li>
+								<li><a href="About_Us.html">About us</a></li>
+								<li><a href="Sitemap.html">Site map</a></li>
+							</ul>
+					</div>
+
+					<div class="social_sp">
+
+					<div class="footerpara contact">
+						<h2 id="contactId">Contact Us</h2>
+							<ul class="remBull">
+
+								<li> <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+								<a href="#">&nbsp;&nbsp;No.57,<br>&nbsp;&nbsp;&nbsp;Ramakrishna Road,<br>&nbsp;&nbsp;&nbsp;Colombo 06,<br>&nbsp;&nbsp;&nbsp;Sri Lanka.</a></li>		
+
+								<li> <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+								<a href="#">&nbsp;&nbsp;gamecorder@gmail.com</a> </li>
+
+								<li> <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+								<a href="#">&nbsp;&nbsp;+94 0772013482</a></li>
+
+							</ul>
+					</div>	
+
+						<div class="social_media">	
+							<ul class="sm_hov">			
+							<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+							</ul>
+
+						</div>
+					</div>
+					
+			</footer>
+			<footer>
+				<div class="copyRight">
+					<p> © 2022 Gamespot LK, All rights reserved<br><i>Edited by</i></p>
+					<p><strong>Page editor - <a href="PageEditor.html" target="_blank" style="text-decoration:none;color: white;">Sasiru Vishmika</a></strong></p>
+				</div>
+			</footer>
+		
+	</div>
+
+	<!--javascript of the webpage-->
+	<script src="CollectionJS.js"></script>
+	</div>
+	</body>
+</html>

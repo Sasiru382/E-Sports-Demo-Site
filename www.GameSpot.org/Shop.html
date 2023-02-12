@@ -1,0 +1,532 @@
+<!doctype html>
+<html>
+<html lang='en'>
+<head>
+<meta charset="UTF-8"  name="viewport">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Webdesign(mainpage).css">
+<link rel="stylesheet" href="ExternalCss.css">
+<link rel="stylesheet" href="navigation.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Styles.css">
+
+<title>buy products</title>
+<style>
+	.navigation_bar{
+		top: 0;
+	}
+	#footerBody{
+		clear: right;
+	}
+</style>
+<body>
+	<script>
+
+		function totalAmnt() 
+		{
+			 var total=0
+			 var input=document.getElementsByName("item");
+			 for (var i = 0; i < input.length; i++) 
+			 {
+				 if (input[i].checked) 
+				 {
+				 total =total+ parseFloat(input[i].value);
+				 }
+				
+			}
+		  document.getElementById("total").value = "$" + total.toFixed(2);
+		}
+		
+		function qntItem1()
+		 {   
+			 const x=200;
+			 var y=document.getElementById("quantity1");
+			 var value=y[y.selectedIndex].text;
+			 var t=value*x;
+			 document.getElementById("total").value= "$" + t.toFixed(2);
+		}
+		function qntItem2()
+		 {   
+		
+			 const x=400;
+			 var y=document.getElementById("quantity2");
+			 var value=y[y.selectedIndex].text;
+			 var t=value*x;
+			 document.getElementById("total").value= "$" + t.toFixed(2);
+		}
+		function qntItem3()
+		 {   
+			 const x=100;
+			 var y=document.getElementById("quantity3");
+			 var value=y[y.selectedIndex].text;
+			 var t=value*x;
+			 document.getElementById("total").value= "$" + t.toFixed(2);
+		}
+		function qntItem4()
+		 {   
+			 const x=150;
+			 var y=document.getElementById("quantity4");
+			 var value=y[y.selectedIndex].text;
+			 var t=value*x;
+			 document.getElementById("total").value= "$" + t.toFixed(2);
+		}
+		function price(types){
+			 var cost1=document.getElementById("type");
+			 var item1=cost1.options[cost1.selectedIndex].value;
+			 
+			 var cost2=document.getElementById("type1");
+			 var item2=cost2.options[cost2.selectedIndex].value;
+			 
+			 var cost3=document.getElementById("type2");
+			 var item3=cost3.options[cost3.selectedIndex].value;
+			 
+			 
+			 item1=parseFloat(item1);
+			 item2=parseFloat(item2);
+			 item3=parseFloat(item3);
+		
+			 var total1=item1+item2+item3;
+			 document.getElementById("total").value="$"+total1.toFixed(2);
+		}
+		
+		function validateForm() 
+		{
+			 if(document.informationForm.fname.value=="")
+			 {
+				 alert("Please enter your first name");
+				 return false;
+			 }
+			 if(document.informationForm.lname.value=="")
+			 {
+				 alert("please enter your last name");
+				 return false;
+			 }
+				  if(document.informationForm.email.value=="")
+			 {
+				 alert("please enter your email");
+				 return false;
+			 }
+				  if(document.informationForm.phone.value=="")
+			 {
+				 alert("please enter your phone number");
+				 return false;
+			 }
+				  if(document.informationForm.street.value=="")
+			 {
+				 alert("please enter your Street address");
+				 return false;
+			 }
+				  if(document.informationForm.city.value=="")
+			 {
+				 alert("please enter your City");
+				 return false;
+			 }
+				  if(document.informationForm.state.value=="")
+			 {
+				 alert("please enter you State");
+				 return false;
+			 }
+				  if(document.informationForm.zip.value=="")
+			 {
+				 alert("please enter your Zip code");
+				 return false;
+			 }
+				  if(document.informationForm.country.value=="")
+			 {
+				 alert("please enter your Country");
+				 return false;
+			 }
+			 
+			 var txt1=document.getElementById("fname").value;
+			 var txt2=document.getElementById("lname").value;
+			 display1.innerHTML=txt1+" "+txt2;
+			 var txt3=document.getElementById("email").value;
+			 display2.innerHTML=txt3;
+			 var txt4=document.getElementById("phone").value;
+			 display3.innerHTML=txt4;
+		}		 
+		
+	</script>
+	<nav>
+        <div class="navigation_bar" >
+            	
+            <img id="navLogo" src="Logo/logo_nav.png" alt="fade effect"></img> 
+                
+            <ul class="menu_area">
+                    <li><a href="Sitemap.html"> Site map </a></li>
+                    <li><a href="About_Us.html"> About us </a></li>
+                    <li><a href="QueryForm.html"> Contact us </a></li>
+                    <li><a href="Game_Engines.html">Engines </a></li>
+                    <li><a href="Quiz2.html"> Quize </a></li>
+                    <li><a href="CollectionNew.html"> Collection </a></li>
+                    <li><a href="Shop.html"> Shop </a></li>
+                    <li class="active"><a href="mainPage.html">Home</a></li>
+            </ul>
+        </div>
+
+    </nav>
+<a id="top" >
+<div class="logo">
+     <img src="images/Artboard.png" alt="logo"/>
+     <h1>Products Available</h1>
+     <hr>
+</div>
+
+<br> 
+     <a href="#bottom" class="anchorbtn">Developers Page Link</a>
+     <a href="#totalCost" class="anchorbtn">Total Cost</a>
+     <a href="#information" class="anchorbtn">Fill Personal Information</a>
+     <a href="#checkout" class="anchorbtn">Go To Checkout</a>
+</br>
+
+
+<div class="product">
+     <form>
+		 <label for="chkbox"></label>
+		 <input type="checkbox" class="chkbox" id="item1" name="item" value="200" onclick="totalAmnt()"/>
+     </form>
+	 <img src="images/nintendo.jpg"alt="Nintendo Switch Console" style="width:100%">
+	 <h3>Nintendo Switch</h3>
+	 <p class="cost">$200</p>
+     <form>
+         <label for="quantity">Quantity:</label>
+	     <select name="quantity" class="quantity" id="quantity1" onchange="qntItem1();">
+			 <option value="1">1</option>
+			 <option value="2">2</option>
+			 <option value="3">3</option>
+			 <option value="4">4</option>
+			 <option value="5">5</option>
+	     </select>
+	 <form name="types">
+	 <label for="type">Type :</label>
+			 <select name="type" class="type" id="type" onchange="price()">
+			 <option value="0.00">Normal</option>
+			 <option value="50.00">Mario edition (+ 50$)</option>
+			 <option value="150.00">pro edition (+ 150$)</option>
+	     </select>
+	 </form>
+     </form>
+ </div>
+
+<div class="product">
+     <form>
+         <label for="chkbox"></label>
+         <input type="checkbox" class="chkbox" id="item2" name="item" value="500" onclick="totalAmnt()"/>
+     </form>
+     <img src="images/PlayStation.jpg" alt="ps5 gaming console">
+     <h3>Playstation 5</h3>
+     <p class="cost">$500</p>
+     <form>
+		 <label for="quantity">Quantity:</label>
+		 <select name="quantity" class="quantity" id="quantity2" onchange="qntItem2();">
+			 <option value="1">1</option>
+			 <option value="2">2</option>
+			 <option value="3">3</option>
+			 <option value="4">4</option>
+			 <option value="5">5</option>
+		 </select>
+	 <form name="types">
+	 <label for="type">Type :</label>
+		 <select name="type" class="type" id="type1" onchange="price()">
+			 <option value="0.00">Normal</option>
+			 <option value="120.00">Slim edition (+ 120$)</option>
+			 <option value="150.00">pro edition (+ 150$)</option>
+		 </select>
+     </form>
+     </form>
+</div>
+<div class="product">
+	<form>
+		<label for="chkbox"></label>
+		<input type="checkbox" class="chkbox" id="item3" name="item" value="699" onclick="totalAmnt()"/>
+	</form>
+	<img src="images/xbox.jpg"alt="X box" style="width:100%">
+	<h3>X Box</h3>
+	<p class="cost">$699</p>
+	<form>
+	<label for="quantity">Quantity:</label>
+		<select name="quantity" class="quantity" id="quantity3" onchange="qntItem3();">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	<form name="types">
+	<label for="type">Type :</label>
+		<select name="type" class="type" id="type2" onchange="price()">
+			<option value="0.00">Normal</option>
+			<option value="50.00">S edition (+ 50$)</option>
+			<option value="150.00">pro edition (+ 150$)</option>
+		</select>
+	</form>
+	</form>
+</div>
+<div class="product">
+	<form>
+		<label for="chkbox"></label>
+		<input type="checkbox" class="chkbox" id="Item4" name="item" value="50" onclick="totalAmnt()"/>
+	</form>
+	<img src="images/games 3.jpg"alt="Games" style="width:100%">
+	<h3>Games</h3>
+	<p class="cost">$50</p>
+	<form>
+	<label for="quantity">Quantity:</label>
+		<select name="quantity" class="quantity" id="quantity4" onchange="qntItem4();">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	<form name="types">
+	<label for="type">Type :</label>
+		<select name="type" class="type" id="type3" onchange="price()">
+			<option value="0.00">GTA 5</option>
+			<option value="50.00">Days Gone</option>
+			<option value="150.00">GOF</option>
+		</select>
+	</form>
+	</form>
+</div>
+ 
+<div class="product">
+     <form>
+         <label for="chkbox"></label>
+         <input type="checkbox" class="chkbox" id="item5" name="item" value="100" onclick="totalAmnt()"/>
+     </form>
+     <img src="images/headset.jfif" alt="Gaming Headset">
+     <h3>Gaming Headset</h3>
+     <p class="cost">$100</p>
+     <form>
+     <label for="quantity">Quantity:</label>
+			 <select name="quantity" class="quantity" id="quantity5" onchange="qntItem5();">
+				 <option value="1">1</option>
+				 <option value="2">2</option>
+				 <option value="3">3</option>
+				 <option value="4">4</option>
+				 <option value="5">5</option>
+	         </select>
+	     <label for="type">Type :</label>
+			 <select name="type" class="type" id="type4" onchange="price()" >
+				 <option value="0.00">Normal</option>
+				 <option value="30">Wireless</option>
+				 <option value="40">With mic</option>
+			 </select>
+     </form>
+ </div>
+ 
+ <div class="product">
+	 <form>
+		 <label for="chkbox"></label>
+		 <input type="checkbox" class="chkbox" id="item6" name="item" value="150" onclick="totalAmnt()"/>
+     </form>
+	 <img src="images/mouse.jpg" alt="Gaming Mouse">
+     <h3>Razer Gaming Mouse</h3>
+     <p class="cost">$150</p>
+     <form>
+     <label for="quantity">Quantity:</label>
+		 <select name="quantity" class="quantity" id="quantity6" onchange="qntItem6();">
+			 <option value="1">1</option>
+			 <option value="2">2</option>
+			 <option value="3">3</option>
+			 <option value="4">4</option>
+			 <option value="5">5</option>
+		 </select>
+	 <form name="types">
+	 <label for="type">Type :</label>
+		 <select name="type" class="type" id="type5" onchange="price()">
+			 <option value="0.00">Normal</option>
+			 <option value="20.00">1500 Dpi (+ 20$)</option>
+			 <option value="30.00">2500 Dpi (+ 30$)</option>
+		 </select>
+	 </form>
+     </form> 
+</div>
+<div class="product">
+	<form>
+		<label for="chkbox"></label>
+		<input type="checkbox" class="chkbox" id="item7" name="item" value="200" onclick="totalAmnt()"/>
+	</form>
+	<img src="images/keyboard.jpg"alt="Gaming Keybord" style="width:100%">
+	<h3>Gaming Keybord</h3>
+	<p class="cost">$200</p>
+	<form>
+		<label for="quantity">Quantity:</label>
+		<select name="quantity" class="quantity" id="quantity7" onchange="qntItem7();">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	<form name="types">
+	<label for="type">Type :</label>
+		<select name="type" class="type" id="type6" onchange="price()">
+			<option value="0.00">Normal</option>
+			<option value="50.00">white colur (+ 50$)</option>
+			<option value="150.00">RGB colour (+ 150$)</option>
+		</select>
+	</form>
+	</form>
+</div>
+
+<div class="product">
+	<form>
+		<label for="chkbox"></label>
+		<input type="checkbox" class="chkbox" id="item8" name="item" value="300" onclick="totalAmnt()"/>
+	</form>
+	<img src="images/chair.jpg"alt="Gaming Chair" style="width:100%">
+	<h3>Gaming Chair</h3>
+	<p class="cost">$300</p>
+	<form>
+		<label for="quantity">Quantity:</label>
+		<select name="quantity" class="quantity" id="quantity8" onchange="qntItem8();">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	<form name="types">
+	<label for="type">Type :</label>
+		<select name="type" class="type" id="type7" onchange="price()">
+			<option value="0.00">Normal</option>
+			<option value="50.00">Pro Red (+ 50$)</option>
+			<option value="50.00">Pro Blue (+ 50$)</option>
+		</select>
+	</form>
+	</form>
+</div>
+
+
+
+<div class="total">
+<hr>
+	<a id="totalCost"><h3>Total</h3>
+	<input value="$0.00" readonly="readonly" type="text" id="total" />
+<hr>
+</div>
+<a id="information">
+<form name="informationForm" onsubmit = "return(validateForm());">
+     <div class="personalInfo">
+         <div class="name-cont" >
+		     <h2><i class="fa fa-user"></i>Name</h2>
+		     <div>
+			     <label class="name1"for="fname">First name</label>
+				 <input type="text" id="fname" name="fname" >
+			 </div>
+			 <div>
+                 <label class="name2" for="lname">Last name</label>
+	             <input type="text" id="lname" name="lname" >
+			</div>
+        </div>
+        <div class="email-cont">
+             <h2><i class="fa fa-envelope"></i>Email</h2>
+             <input type="email" id="email" name="email" placeholder="ex:name@example.com" />
+        </div>
+        <div class="phone-cont">
+             <h2><i class="fa fa-phone"></i>Telephone Number</h2>
+             <label class="phone" for="phone">Enter your phone number:</label>
+             <input type="text" id="phone" name="phone"  placeholder="000-000-000" maxlength="10"/>
+        </div>
+        <div class="billing-cont">
+             <h2><i class="fa fa-address-card-o"></i>Billing Address</h2>
+        <div class="form-group">
+             <input type="street"   class="form-control" name="street" id="inputStreet"  placeholder="Street" />
+             <input type="city"     class="form-control" name="city"   id="inputCity"    placeholder="City" />
+             <input type="state"    class="form-control" name="state"  id="inputState"   placeholder="State" />
+             <input type="zip"      class="form-control" name="zip"    id="inputZip"     placeholder="Zip"/ >
+             <input type="country"  class="form-control" name="country" id="inputCountry" placeholder="Country"/ >
+        </div>
+        </div>
+        <div class="notes-cont">
+             <h2>Special instructions</h2>
+        <div class="notes-group">
+             <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+        </div>
+        </div>
+
+     </div>
+
+</form>
+<a id="checkout">
+<input id="checkout "type="submit"  value="Checkout" onclick="validateForm()"/>
+<p>--------------------------</p>
+<p><b>INVOICE</b></p>
+<p>--------------------------</p>
+<br><p><b>Name:</b><span id="display1" ></span></p>
+<br><p><b>Email:</b><span id="display2" ></span></p>
+<br><p><b>Telephone:</b><span id="display3" ></span></p>
+
+</body>
+<br><a href="editor page.html" class="anchorbtn" sty>Page developer</a></br>
+<a id="bottom">
+<a href="#top" class="topbtn">back to top</a>
+<div id="footerBody">
+		
+			<footer>
+				
+				<div class="section1">
+					<div class="footerpara abtUs">
+						<img src="images/logo_nav.png" alt="WebsiteLogo" id="imgtag">
+
+						<h2 id="abtId">About Us</h2>
+						<p id="align1">GameSpot website is dedicated exclusively to serve the game player's to get the knowledge on upcoming, released games as well as ask any doubtful questions which user's has on global interactive gaming industry and any furthur thing relates to our website GameSpot. Sign with us. Stay informed about special deals, the latest products, events, and more from GameSpot.</p>
+					</div>
+				</div>
+
+				<div class="footerpara links">
+					<h2>Quick Links</h2>
+						<ul class="hoverlinks">
+							<li><a href="Shop.html">Shop</a></li>
+							<li><a href="Quiz2.html">Quize</a></li>
+							<li><a href="CollectionNew.html">Collection</a></li>
+							<li><a href="About_Us.html">About us</a></li>
+							<li><a href="QueryForm.html">Contact Us</a></li>
+							<li><a href="Sitemap.html">Site map</a></li>
+						</ul>
+				</div>
+
+				<div class="social_sp">
+
+				<div class="footerpara contact">
+					<h2 id="contactId">Contact Us</h2>
+						<ul class="remBull">
+
+							<li> <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+							<a href="#">&nbsp;&nbsp;No.57,<br>&nbsp;&nbsp;&nbsp;Ramakrishna Road,<br>&nbsp;&nbsp;&nbsp;Colombo 06,<br>&nbsp;&nbsp;&nbsp;Sri Lanka.</a></li>		
+
+							<li> <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+							<a href="#">&nbsp;&nbsp;gamecorder@gmail.com</a> </li>
+
+							<li> <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+							<a href="#">&nbsp;&nbsp;+94 0772013482</a></li>
+
+						</ul>
+				</div>	
+
+					<div class="social_media">	
+						<ul class="sm_hov">			
+						<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+						</ul>
+
+					</div>
+				</div>
+				
+		</footer>
+		<footer>
+			<div class="copyRight">
+				<p> © 2022 Gamespot LK, All rights reserved<br><i>Edited by</i></p>
+				<p>Editor's page : <a href="page_editor.html" target="_blank" style="text-decoration:none;color: white;">Akash Suresh</a></p>
+				
+			</div>
+		</footer>
+		
+	</div>		
+</html>

@@ -1,0 +1,154 @@
+/*footer styling*/
+
+#footerBody{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 50vh;
+	flex-direction: column;
+	background: #111;
+	color: whitesmoke;
+	position: relative;
+}
+footer{
+	position: relative;
+	width: 87%;
+	height: auto;
+	padding:75px 100px;
+	background: #111;
+	display: flex;
+	justify-content: space-between;
+	flex flex-wrap: wrap;
+
+}
+footer .section1{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+footer .section1.footerpara{
+	margin-right: 30px;
+}
+footer .section1.footerpara.abtUs{
+	width: 31%;
+}
+#align1{
+	margin-left: 0.1%;
+	text-align: justify;
+	width: 540px;
+	color: #999;
+}
+#abtId{
+	margin-left: -78px;
+}
+.footerpara h2{
+  font-weight: 150;
+  display: inline-block;
+  padding-bottom: -10px;
+  border-bottom: 1.2px #d2202f solid;
+}
+.links{
+	position: relative;
+	width: 30%;
+}
+.links h2{
+	margin-left:100px;
+}
+.links ul li{
+	list-style: none;
+}
+.links ul li a{
+	color: #999;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.hoverlinks li a {
+	width: 152px;
+	margin-left: 65px;
+}
+.hoverlinks li a:hover{
+	color: #fff;
+}
+.sm_hov{
+	margin-top: 20px;
+	display: flex;
+}
+.social_media li {
+	list-style: none;
+}
+.remBull{
+	list-style: none;
+	margin-left: 16px;
+}
+.social_media li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	text-decoration: none;
+	border-radius: 4px;
+}
+.sm_hov li  :hover{
+	background: red;
+}
+.sm_hov li a i{
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.social_media li a {
+	color: #fff;
+	font-size: 20px;
+}
+.remBull li a{
+	color: #999;
+}
+.remBull li span i a{
+	margin-right: 90%;
+	margin-left: 12px;
+}
+
+.contact .remBull{
+	position: relative;
+}
+.contact .remBull li a{
+	text-decoration: none;
+}
+.contact .remBull li {
+	display: flex;
+	margin-bottom: 15px;
+}
+.remBull li  :hover{
+	color: #fff;
+}
+#contactId{
+	margin-left: 45px;
+}
+.copyRight p{
+	color:#999;
+}
+.copyRight{
+	width: 100%;
+	background: #181818;
+	padding: 8px 100px;
+	text-align: center;
+	color: #999;
+	position: relative;
+
+}
+#imgtag{
+	height: 40px;
+	width:155px;
+	margin-top:-65px;
+	margin-left: -78px;
+	margin-bottom: 55px;
+}

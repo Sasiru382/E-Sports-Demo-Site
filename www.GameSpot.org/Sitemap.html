@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Site map</title>
+   <meta charset='utf-8'>
+
+   <!--CSS for navigation panel and footer-->
+   <link rel="stylesheet" href="navigation.css">
+   <link rel="stylesheet" href="style1.css">
+   <link rel="stylesheet" type="text/css" href="Styles.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   
+   <!--internal css for the page-->
+	<style>
+
+      .navigation_bar{
+         top: 0;
+      }
+		body{
+         background-image: url(images/BG2.jpg);
+         background-repeat: no-repeat; 
+         padding: 0%;
+         margin: 0%;
+      }
+		line{stroke:white;
+         stroke-width:2;
+         marker-end:url(#arrow);
+      }
+		rect{fill:#FF3131;
+         stroke-width:2;
+         stroke:white
+      }
+		marker{
+         fill:white;
+      }
+		#horizontalbar{
+         marker-end:none;
+      }
+		text{
+         fill:white;
+         font-family:Times New Roman,Helvetica,Calibri;
+         font-size:20px;
+         text-anchor: middle;
+         dominant-baseline: middle;
+      }
+		rect:hover{
+         fill:#37EDFF;
+         text-shadow: 200px 200px;
+      }
+      #topic{
+            width:100%;
+            height: 200px;
+            background-image: url("images/Forza-Horizon-5.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 10px;
+            }
+      #topic h1{
+            text-align: center;
+            color: white;
+            font-family: calibri;
+            padding-top:10px;
+            font-size: 60px;
+         }
+
+    </style>
+</head>
+<body>
+
+   <nav>
+        <div class="navigation_bar" >
+               
+            <img id="navLogo" src="Logo/logo_nav.png" alt="fade effect">
+                
+            <ul class="menu_area">
+                    <li><a href="Sitemap.html"> Site map </a></li>
+                    <li><a href="About_Us.html"> About us </a></li>
+                    <li><a href="QueryForm.html"> Contact us </a></li>
+                    <li><a href="Game_Engines.html">Engines </a></li>
+                    <li><a href="Quiz2.html"> Quize </a></li>
+                    <li><a href="CollectionNew.html"> Collection </a></li>
+                    <li><a href="Shop.html"> Shop </a></li>
+                    <li class="active"><a href="mainPage.html">Home</a></li>
+            </ul>
+        </div>
+
+   </nav>
+
+   <div id="topic">
+         <h1>SITE MAP</h1>
+   </div>
+
+   <div id="map">
+
+      <svg width="100%" height="760px">
+
+      <!--Marker arrow-->
+      	<marker id="arrow" markerWidth="8" markerHeight="5" viewBox="0 0 5 5" refX="4" refY="5"  orient="left">
+      		<path d="M2 0 L4 5 L6 0 Z" />
+      	</marker>
+      	
+      <!--Home-->
+         <a href="mainPage.html" target="_blank">
+         <svg width="10%" height="5%" x="45%" y="15%">
+         <rect class="rectangle" x="0" y="0" rx="10" ry="10" width="100%" height="100%"  />
+         <text x="50%" y="50%">Home</text> 
+         </svg></a>  
+         <line id="horizontalbar" x1="10%" y1="30%" x2="90%" y2="30%" />
+         <line x1="49.9%" y1="20%" x2="49.9%" y2="30%" />
+          
+      <!--Quiz-->
+         <a href="Quiz2.html" target="_blank">
+         <svg width="10%" height="5%" x="58%" y="52.2%">
+         <rect  x="0" y="0" rx="10" ry="10" width="100%" height="100%"  />
+         <text x="50%" y="50%" >Quiz</text>
+         </svg>
+         </a>
+         <line x1="10%" y1="30%" x2="10%" y2="52%"  />
+         
+      <!--Shop-->   
+         <a href="Shop.html" target="_blank">
+         <svg width="10%" height="5%" x="72%" y="52.2%">
+         <rect x="0" y="0" rx="10" ry="10" width="100%" height="100%"  />
+         <text x="50%" y="50%" >Shop</text>
+         </svg>
+         </a>
+         <line x1="23.3%" y1="30%" x2="23.3%" y2="52%"  />
+         
+      <!--Collection-->
+         <a href="CollectionNew.html" target="_blank">
+         <svg width="10%" height="5%" x="45%" y="52.2%">
+         <rect  x="0" y="0" rx="10" ry="10" width="100%" height="100%"  />
+         <text x="50%" y="50%" >Collection</text>
+         </svg>
+         </a>
+         <line x1="36.6%" y1="30%" x2="36.6%" y2="52%"  />
+          
+      <!--Contact Us-->   
+         <a href="QueryForm.html" target="_blank">
+         <svg width="10%" height="5%" x="32%" y="52.2%">
+         <rect x="0" y="0" rx="10" ry="10" width="100%" height="100%"  />
+         <text x="50%" y="50%" >Contact Us</text>
+         </svg>
+         </a>
+         <line x1="49.9%" y1="30%" x2="49.9%" y2="52%"  />
+         
+      <!--Sitemap-->   
+         <a href="Sitemap.html">
+         <svg width="10%" height="5%" x="5%" y="52.2%">
+         <rect x="0" y="0" rx="10" ry="10" width="100%" height="100%"  />
+         <text x="50%" y="50%" >Site map</text>
+         </svg>
+         </a>
+         <line x1="63.2%" y1="30%" x2="63.2%" y2="52%"  />
+         
+      <!--Game Engines-->  
+         <a href="Game_Engines.html" target="_blank">
+         <svg width="10%" height="5%" x="85%" y="52.2%">
+         <rect x="0" y="0" rx="10" ry="10" width="100%" height="100%"  />
+         <text x="50%" y="50%" >Engines</text>
+         </svg>
+         </a>
+         <line x1="76.5%" y1="30%" x2="76.5%" y2="52%"  />
+         
+      <!--About Us-->  
+         <a href="About_Us.html" target="_blank">
+         <svg width="10%" height="5%" x="18%" y="52.2%">
+         <rect x="0" y="0" rx="10" ry="10" width="100%" height="100%"  />
+         <text x="50%" y="50%" >About Us</text>
+         </svg>
+         </a>
+         <line x1="90%" y1="30%" x2="90%" y2="52%"  />
+         
+      </svg> 
+   </div>
+   <!-- footer of the webpage-->
+   <div id="footerBody">
+      
+         <footer>
+            
+            <div class="section1">
+               <div class="footerpara abtUs">
+                  <img src="images/logo_nav.png" alt="WebsiteLogo" id="imgtag">
+
+                  <h2 id="abtId">About Us</h2>
+                  <p id="align1">GameSpot website is dedicated exclusively to serve the game player's to get the knowledge on upcoming, released games as well as ask any doubtful questions which user's has on global interactive gaming industry and any furthur thing relates to our website GameSpot. Sign with us. Stay informed about special deals, the latest products, events, and more from GameSpot.</p>
+               </div>
+            </div>
+
+            <div class="footerpara links">
+               <h2>Quick Links</h2>
+                  <ul class="hoverlinks">
+                     <li><a href="Shop.html">Shop</a></li>
+                     <li><a href="Quiz2.html">Quize</a></li>
+                     <li><a href="CollectionNew.html">Collection</a></li>
+                     <li><a href="About_Us.html">About us</a></li>
+                     <li><a href="QueryForm.html">Contact Us</a></li>
+                     <li><a href="Sitemap.html">Site map</a></li>
+                  </ul>
+            </div>
+
+            <div class="social_sp">
+
+            <div class="footerpara contact">
+               <h2 id="contactId">Contact Us</h2>
+                  <ul class="remBull">
+
+                     <li> <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                     <a href="#">&nbsp;&nbsp;No.57,<br>&nbsp;&nbsp;&nbsp;Ramakrishna Road,<br>&nbsp;&nbsp;&nbsp;Colombo 06,<br>&nbsp;&nbsp;&nbsp;Sri Lanka.</a></li>    
+
+                     <li> <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                     <a href="#">&nbsp;&nbsp;gamecorder@gmail.com</a> </li>
+
+                     <li> <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                     <a href="#">&nbsp;&nbsp;+94 0772013482</a></li>
+
+                  </ul>
+            </div>   
+
+               <div class="social_media"> 
+                  <ul class="sm_hov">        
+                  <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                  </ul>
+
+               </div>
+            </div>
+            
+      </footer>
+      <footer>
+         <div class="copyRight">
+            <p> © 2022 Gamespot LK, All rights reserved<br><i>Edited by</i></p>
+            <p><strong>Page editor - <a href="PageEditor.html" target="_blank" style="text-decoration:none;color: white;">Sasiru Vishmika</a></strong></p>
+         </div>
+      </footer>
+      
+   </div>      
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+/*body{
+	background: linear-gradient(to right,#17161a,#242124 50%,#17161a);
+	color: white;
+	font-size: 16px;
+	margin: 0;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 180vh;
+	box-sizing: border-box;
+}*/
+body{
+	margin: 0;
+	width: 100%;
+}
+#summary{
+	color: silver;
+}
+#footerBody{
+	width: auto;
+}
+.Qmain_page{
+	margin-left: 120px;
+}
+
+.formBox{
+	width: 600px;
+	height: 750px;
+	margin-top: 20px;
+	background: darkgray;
+	padding: 30px;
+	border-radius: 10px;
+}
+.subject{
+	margin-top: 12.5px;
+}
+.input-row{
+	position: relative;
+	margin-top: 2px;
+	margin-bottom: 8px;
+}
+#name, #telNo, #mail{
+	width: 40%;
+	padding: 2px 9px;
+	font-size: 15px;
+	color: gray;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+#BOD{
+	width: 6%;
+	padding: 2px 9px;
+	font-size: 15px;
+	color: gray;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+.formBox select{
+	width: 50%;
+	padding: 2px 9px;
+	font-size: 15px;
+	color: gray;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+#txtArea{
+	width: 50%;
+	padding: 18px 9px;
+	font-size: 15px;
+	color: gray;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+#btnQ{
+	margin-top: 24px;
+	text-align: center;
+	border-radius: 12px;
+	font-size: 20px;
+}
+#btnQ:hover{
+	background: red;
+}
+.formBox textarea{
+	height: 70px;
+}
+.formBox input[type="checkbox"]{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.choiceCheck{
+	padding-left: 8px;
+}
+.formBox input:not([type="View Query"]),
+.formBox textarea,
+
+.formBox input[type="View Query"]{
+	padding: 15px 15px;
+	font-size: 15px;
+	cursor: pointer;
+	border-radius: 2px;
+	border: 0;
+	color: black;
+}
+.formBox input[type="submit"]{
+	padding: 10px 30px;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 0;
+	color: black;
+}
+button{
+	cursor: pointer;
+}
+.error{
+	display: block;
+	font-weight: 700;
+	font-size: 14px;
+	color: red;
+	display: none;
+}
+#viewQ{
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+/*
+#bgDragon{
+	background-image: url(dragon2.jpg);
+	width:100% ;
+	height: 200px;
+	position: relative;
+	left: 0%;
+	right: 0%;		
+}
+#Qid{
+	text-align: center;
+	margin-top: 5px;
+}*/
+
+

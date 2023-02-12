@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz </title>
+	<link rel="stylesheet" href="ExternalCss.css">
+	<link rel="stylesheet" href="navigation.css">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+	<style>
+		ul #ul2{
+			list-style: circle;
+			color: black;
+			width: 150px;
+		}
+		div #timer{
+			font-size: xx-large;
+		}
+		.header{
+			padding: 10px 16px;
+			background: #555;
+			color: white;
+		}
+		.sticky{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			
+		}
+		#quiz{
+			padding-left: 10px;
+		}
+		#quiz p, strong {
+			font-size: 25px;
+		}
+		#quiz span {
+			font-size: 20px;
+		}
+		#submit{
+			font-size: larger;
+		}
+		
+		#heading{
+			background-image: url(images/header33.jpg);
+			background-repeat: no-repeat;
+    		background-size: cover;
+			width:100% ;
+			height: 160px;
+			position: relative;
+			font-size: xx-large;
+			color: white;
+			text-align: center;
+			padding-top: 10px;
+		}
+		#section{
+			border: 3px solid;
+			margin: 5px;
+		}
+		#btn{
+			font-size: larger;
+			margin-left: 40px;
+		}
+		#body{
+			margin: 0;
+			color: silver;
+		}
+		.navigation_bar{
+			top: 0;
+		}
+		
+
+	</style>
+
+</head>
+<body id="body">
+	<nav>
+        <div class="navigation_bar" >
+            	
+            <img id="navLogo" src="Logo/logo_nav.png" alt="fade effect">
+                
+            <ul class="menu_area">
+                    <li><a href="Sitemap.html"> Site map </a></li>
+                    <li><a href="About_Us.html"> About us </a></li>
+                    <li><a href="QueryForm.html"> Contact us </a></li>
+                    <li><a href="Game_Engines.html">Engines </a></li>
+                    <li><a href="Quiz2.html"> Quize </a></li>
+                    <li><a href="CollectionNew.html"> Collection </a></li>
+                    <li><a href="Shop.html"> Shop </a></li>
+                    <li class="active"><a href="mainPage.html">Home</a></li>
+            </ul>
+        </div>
+
+    </nav>
+	<div id="heading">
+		<h1 style="padding-top: 10px; font-family: calibri; font-size: 60px;">Try to win this Quiz</h1>
+	</div>
+	<div id="section">
+		<ul style="font-weight: bold; font-size: 25px;">
+			<li>This quiz contains 10 questions regarding <i>GAMING</i>.</li>
+			<li>You have only <b>ONE MINUTE</b> to complete the quiz.</li>
+			<li>At the end of the quiz you have to submit your answers to get your results.</li>
+			<li>If your answer is correct, it will be displayed in GREEN colour while if your answer is incorrect, it will be displayed in RED colour.</li>
+			<li>For each correct answer you will <u>get two marks</u> and also for each incorrect answer you will <u>lose one mark</u>.</li>
+			<li>According to your score the background colour will be changed as follows :
+				<ul id="ul2">
+					<li style="background-color:#B08D57 ; ">Score >= 15 </li>
+					<li style="background-color:silver ; ">Score >= 10 </li>
+					<li style="background-color:#D7BE69; ">Score >= 5  </li>
+					<li style="background-color:#E5E4E2 ; ">Score &lt; 5  </li>
+				</ul>
+			</li>
+			<li>Are you ready?? Then click on Begin button to start the quiz ! </li>	
+		</ul>
+	
+		<button id="btn">Begin</button><br><br>
+		<div class="header" id="myHeader">
+			<div id="timer"></div>
+		</div>
+	</div>
+	<hr>
+	
+
+	<div id="quiz" style="display: none;">
+		<div><strong>Question 1</strong>
+			<p>What is the strongest block you can find in Minecraft?</p>
+			<input type="radio" name="answer1" value="correct"><span class="ans">Obsidian</span><br>
+			<input type="radio" name="answer1" value="wrong"><span>Diamond</span><br>
+			<input type="radio" name="answer1" value="wrong"><span>Ender chest</span><br>
+			<input type="radio" name="answer1" value="wrong"><span>Ancient debris</span><br>
+		</div>
+		<hr>
+		<div><strong>Question 2</strong>
+			<p>How many Donkey Kong games have been released in the Home console video game format?</p>
+			<input type="radio" name="answer2" value="wrong"><span>22</span><br>
+			<input type="radio" name="answer2" value="correct"><span class="ans">14</span><br>
+			<input type="radio" name="answer2" value="wrong"><span>10</span><br>
+			<input type="radio" name="answer2" value="wrong"><span>31</span><br>
+		</div>
+		<hr>
+		<div><strong>Question 3</strong>
+			<p>Which edition of Fifa sold the most amount of copies?</p>
+			<input type="radio" name="answer3" value="wrong"><span>Fifa 10</span><br>
+			<input type="radio" name="answer3" value="wrong"><span>Fifa 15</span><br>
+			<input type="radio" name="answer3" value="correct"><span class="ans">Fifa 18</span><br>
+			<input type="radio" name="answer3" value="wrong"><span>Fifa 07</span><br>
+		</div>
+		<hr>
+		<div><strong>Question 4</strong>
+			<p>What is the longest Mario Kart track?</p>
+			<input type="radio" name="answer4" value="wrong"><span>Luigi Raceway</span><br>
+			<input type="radio" name="answer4" value="wrong"><span>Koopa Cape Rock</span><br>
+			<input type="radio" name="answer4" value="wrong"><span>Rock Mountain</span><br>
+			<input type="radio" name="answer4" value="correct"><span class="ans">3DS Rainbow Road</span><br>
+		</div>
+		<hr>
+		<div><strong>Question 5</strong>
+			<p>Which was the first video game produced by Nintendo?</p>
+			<input type="radio" name="answer5" value="wrong"><span>Donkey Kong</span><br>
+			<input type="radio" name="answer5" value="wrong"><span>Mario Bros</span><br>
+			<input type="radio" name="answer5" value="wrong"><span>Luigi's Mansion</span><br>
+			<input type="radio" name="answer5" value="correct"><span class="ans">EVR Racing</span><br>
+		</div>
+		<hr>
+		<div><strong>Question 6</strong>
+			<p>Which video game had the biggest cash prize pool for an Esports tournament?</p>
+			<input type="radio" name="answer6" value="wrong"><span>League of Legends</span><br>
+			<input type="radio" name="answer6" value="wrong"><span>Starcraft II</span><br>
+			<input type="radio" name="answer6" value="correct"><span class="ans">Dota 2</span><br>
+			<input type="radio" name="answer6" value="wrong"><span>Fifa 2I</span><br>
+		</div>
+		<hr>
+		<div><strong>Question 7</strong>
+			<p>Which gaming console has the record for most units sold?</p>
+			<input type="radio" name="answer7" value="wrong"><span>Nintendo Gamecube</span><br>
+			<input type="radio" name="answer7" value="correct"><span class="ans">PS2</span><br>
+			<input type="radio" name="answer7" value="wrong"><span>Xbox 360</span><br>
+			<input type="radio" name="answer7" value="wrong"><span>Wii</span><br>
+		</div>
+		<hr>
+		<div><strong>Question 8</strong>
+			<p>What is the best-selling arcade cabinet video game of all time?</p>
+			<input type="radio" name="answer8" value="wrong"><span>Mortal Kombat</span><br>
+			<input type="radio" name="answer8" value="wrong"><span>Space Invaders</span><br>
+			<input type="radio" name="answer8" value="correct"><span class="ans">Pacman</span><br>
+			<input type="radio" name="answer8" value="wrong"><span>NBA Jam</span><br>
+		</div>
+		<hr>
+		<div><strong>Question 9</strong>
+			<p>Which of these best-selling video game franchises without a main character has been sold the most?</p>
+			<input type="radio" name="answer9" value="wrong"><span>The Sims</span><br>
+			<input type="radio" name="answer9" value="wrong"><span>Minecraft</span><br>
+			<input type="radio" name="answer9" value="correct"><span class="ans">Tetris</span><br>
+			<input type="radio" name="answer9" value="wrong"><span>Need for Speed</span><br>
+		</div>
+		<hr>
+		<div><strong>Question 10</strong>
+			<p>What year was the first Super Smash Bros. released?</p>
+			<input type="radio" name="answer10" value="wrong"><span>1998</span><br>
+			<input type="radio" name="answer10" value="wrong"><span>1997</span><br>
+			<input type="radio" name="answer10" value="correct"><span class="ans">1999</span><br>
+			<input type="radio" name="answer10" value="wrong"><span>1993</span><br>
+		</div>
+		<hr>
+		<br>
+		<br>
+		<button type="submit" id="submit" onclick="return getResults();">Submit</button>
+
+		<h2>Results</h2>
+		<p id ="results"></p>
+		<p id="score"></p>
+		<p id="time"></p>
+		<p id="win"></p>
+	</div>
+
+
+	<script>
+		function displayquiz(){
+			document.getElementById("quiz").style.display = "block";
+			
+		}
+		window.onscroll = function()
+		{
+			myFunction();
+		}
+
+		let header = document.getElementById("myHeader");
+		let sticky = header.offsetTop;
+		function myFunction(){
+			if (window.pageYOffset > sticky){
+				header.classList.add("sticky");
+			}else{
+				header.classList.remove("sticky");
+			}
+		}
+
+		function countdown(){
+			let submit = document.getElementById("submit");
+			let timeleft = 60;
+			let downloadTimer = setInterval(function(){
+				if (timeleft <= 0){
+					clearInterval(downloadTimer);
+					document.getElementById("timer").innerHTML="Time is up";
+					document.getElementById("time").innerHTML="Time taken : "+(60 - timeleft)+" seconds";
+					return getResults();
+
+
+				}else{
+					document.getElementById("timer").innerHTML=timeleft + " seconds remaining";
+					}
+				
+				submit.addEventListener('click',event => {
+					clearInterval(downloadTimer);
+					document.getElementById("time").innerHTML="Time taken : "+(60 - timeleft)+" seconds";
+				})
+				
+				timeleft -= 1;
+
+			},1000);
+		}
+
+		let btn = document.getElementById("btn");
+		btn.addEventListener('click',event => {
+			displayquiz();
+			countdown();
+
+		});
+
+		
+		function getResults(){
+			let count = 0;
+			let score = 0;
+			for(let j = 1; j <= 10; j++){
+				let radioArray = document.getElementsByName('answer'+j);
+				for(let i=0; i < radioArray.length; i++){
+					if(radioArray[i].checked){
+						if (radioArray[i].value == "correct"){
+							count++;
+							score += 2;
+							radioArray[i].nextSibling.style.color = "#1F6120";
+
+						}else{
+							score -= 1;
+							radioArray[i].nextSibling.style.color = "#870910";
+									
+						}
+					}else{
+						radioArray[i].nextSibling.style.color = "";
+								
+					}
+					answer = document.getElementsByClassName("ans");
+					for(k=0; k < answer.length; k++){
+						answer[k].style.color = "#1F6120";
+					}
+							
+				}
+			}
+				
+			document.getElementById("results").innerHTML = "You have got "+count+" corrrect";
+			document.getElementById("score").innerHTML = "Out of 20 your score is "+score;
+			if(score == 20){
+				document.getElementById('win').innerHTML = "Congratulations you won the quiz !! Your knowledege in gaming is marvellous !!";
+			}
+
+
+			
+			if (score >=15){
+				document.body.style.backgroundColor ='#B08D57';
+			}else if(score >=10){
+				document.body.style.backgroundColor ='silver';
+			}else if(score >= 5){
+				document.body.style.backgroundColor ='#D7BE69';
+			}else{
+				document.body.style.backgroundColor ='#E5E4E2';
+			}
+
+			document.getElementById("body").style.color ='black';
+
+
+		}
+
+	</script>
+	<br>
+	<br>
+	<div id="footerBody">
+      
+         <footer>
+            
+            <div class="section1">
+               <div class="footerpara abtUs">
+                  <img src="images/logo_nav.png" alt="WebsiteLogo" id="imgtag">
+
+                  <h2 id="abtId">About Us</h2>
+                  <p id="align1">GameSpot website is dedicated exclusively to serve the game player's to get the knowledge on upcoming, released games as well as ask any doubtful questions which user's has on global interactive gaming industry and any furthur thing relates to our website GameSpot. Sign with us. Stay informed about special deals, the latest products, events, and more from GameSpot.</p>
+               </div>
+            </div>
+
+            <div class="footerpara links">
+               <h2>Quick Links</h2>
+                  <ul class="hoverlinks">
+                     <li><a href="Shop.html">Shop</a></li>
+                     <li><a href="Quiz2.html">Quize</a></li>
+                     <li><a href="CollectionNew.html">Collection</a></li>
+                     <li><a href="QueryForm.html">Contact Us</a></li>
+                     <li><a href="About_Us.html">About us</a></li>
+                     <li><a href="Sitemap.html">Site map</a></li>
+                  </ul>
+            </div>
+
+            <div class="social_sp">
+
+            <div class="footerpara contact">
+               <h2 id="contactId">Contact Us</h2>
+                  <ul class="remBull">
+
+                     <li> <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                     <a href="#">&nbsp;&nbsp;No.57,<br>&nbsp;&nbsp;&nbsp;Ramakrishna Road,<br>&nbsp;&nbsp;&nbsp;Colombo 06,<br>&nbsp;&nbsp;&nbsp;Sri Lanka.</a></li>    
+
+                     <li> <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                     <a href="#">&nbsp;&nbsp;gamecorder@gmail.com</a> </li>
+
+                     <li> <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                     <a href="#">&nbsp;&nbsp;+94 0772013482</a></li>
+
+                  </ul>
+            </div>   
+
+               <div class="social_media"> 
+                  <ul class="sm_hov">        
+                  <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                  </ul>
+
+               </div>
+            </div>
+            
+      </footer>
+      <footer>
+         <div class="copyRight">
+            <p> © 2022 Gamespot LK, All rights reserved<br><i>Edited by</i></p>
+            <p>Editor's page : <a href="editor's_page.html" target="_blank" style="text-decoration:none;color: white;">Roshina Perera</a></p>
+         </div>
+      </footer>
+      
+   </div>      
+	
+
+</body>
+</html>
